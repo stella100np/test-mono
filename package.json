@@ -1,0 +1,19 @@
+{
+  "name": "test-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=docs^... && changeset publish"
+  },
+  "author": "zgy",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.22.0",
+    "turbo": "^1.2.14"
+  }
+}
