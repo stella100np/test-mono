@@ -10,12 +10,12 @@ importers:
       '@changesets/cli': registry.npmmirror.com/@changesets/cli/2.22.0
       turbo: registry.npmmirror.com/turbo/1.2.14
 
-  packages/bar:
+  apps/docs:
     specifiers:
-      foo: workspace:^
+      '@zgy/foo': '*'
       vite: ^2.9.9
     dependencies:
-      foo: link:../foo
+      '@zgy/foo': link:../../packages/foo
     devDependencies:
       vite: registry.npmmirror.com/vite/2.9.9
 
